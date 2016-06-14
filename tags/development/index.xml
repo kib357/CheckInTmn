@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on CheckInTmn - фотопрогулки в Тюмени</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/development/</link>
+    <link>http://checkintmn.ru/tags/development/</link>
     <description>Recent content in Development on CheckInTmn - фотопрогулки в Тюмени</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://checkintmn.ru/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Creating a New Theme</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/</link>
+      <link>http://checkintmn.ru/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/</guid>
+      <guid>http://checkintmn.ru/post/creating-a-new-theme/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:203afb8fdc074e80a6a8cddc7dc8ce70&#34;&gt;Introduction&lt;/h2&gt;

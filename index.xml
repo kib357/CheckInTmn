@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CheckInTmn - фотопрогулки в Тюмени</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <link>http://checkintmn.ru/</link>
     <description>Recent content on CheckInTmn - фотопрогулки в Тюмени</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jun 2016 23:50:30 +0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://checkintmn.ru/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Greeting</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/greeting/</link>
+      <link>http://checkintmn.ru/post/greeting/</link>
       <pubDate>Fri, 10 Jun 2016 23:50:30 +0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/greeting/</guid>
+      <guid>http://checkintmn.ru/post/greeting/</guid>
       <description>&lt;p&gt;Hello!
 This is first post in CheckInTmn site. This post is new post and have some info. I hope hugo show summary of this post on main page.
 May be it will be truncated or not, i dont know. In docs written that it will be truncated to 70 symbols (or may be words?).
@@ -27,10 +27,10 @@ I try to write some more text to test post summary. Yeap! It works!&lt;/p&gt;
     
     <item>
       <title>Creating a New Theme</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/</link>
+      <link>http://checkintmn.ru/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/</guid>
+      <guid>http://checkintmn.ru/post/creating-a-new-theme/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:203afb8fdc074e80a6a8cddc7dc8ce70&#34;&gt;Introduction&lt;/h2&gt;

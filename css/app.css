@@ -341,7 +341,7 @@ section.text-left p {
   padding: 0;
   background: url("/img/top.jpg");
   background-size: cover;
-  background-position-y: 60%;
+  background-position: 50% 60%;
 }
 #top .top-content {
   padding-top: 90px;
@@ -372,7 +372,7 @@ section.text-left p {
   #main {
     height: 700px;
     background-image: url("/img/main-bw.jpg");
-    background-position-x: right;
+    background-position: right 0;
     background-repeat: no-repeat;
     background-size: contain;
   }

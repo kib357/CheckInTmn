@@ -23,18 +23,23 @@
         </button>
         <ul class="nav collapse" id="nav">
             <li>
-                <a href="/post/" class="nav-link">
-                    Блог
+                <a href="#main" class="nav-link index-link" data-active-until="main-end">
+                    О проекте
                 </a>
             </li>
             <li>
-                <a href="#pricing" class="nav-link index-link">
+                <a href="#pricing" class="nav-link index-link" data-active-until="pricing-end">
                     Цены
                 </a>
             </li>
             <li>
-                <a href="#contacts" class="nav-link index-link">
+                <a href="#contacts" class="nav-link index-link" data-active-until="contacts-end" data-active-after="contacts-start">
                     Контакты
+                </a>
+            </li>
+            <li>
+                <a href="/post/" class="nav-link ">
+                    Блог
                 </a>
             </li>
         </ul>
@@ -166,14 +171,14 @@
                     <div class="extra"></div>
                     <div class="time"><span>2</span></div>
                     <div class="body">
-                        Мы перезвоним вам и договоримся о времени и месте. Если погода испортится – можно перенести дату, хотя дождь не помеха для отличных фото
+                        Мы перезвоним вам и договоримся о времени и месте. Если погода испортится – можно перенести дату, но мы уверены, что дождь не помеха для отличных фото!
                     </div>
                 </div>
                 <div class="timeslot">
                     <div class="extra"></div>
                     <div class="time"><span>3</span></div>
                     <div class="body">
-                        Приходите вовремя, фотограф проведет съемку и передаст фото в обработку.
+                        Приходите вовремя, фотограф будет гулять вместе с вами и выбирать лучшие места для снимков, а затем отправит фото в обработку.
                     </div>
                 </div>
                 <div class="timeslot">
@@ -187,9 +192,11 @@
         </div>
     </section>
 
+    <div id="main-end"></div>
+
     <section id="pricing">
         <div>
-            <h2 class="header">Заказать фотопрогулку</h2>
+            <h2 id="pricing-header" class="header">Заказать фотопрогулку</h2>
             <div class="cards-list">
                 <div class="item card">
                     <div class="head">
@@ -268,6 +275,8 @@
         </div>
     </section>
 
+    <div id="pricing-end"></div>
+
     <section id="blog">
         <div class="post-list">
             <h2 class="header">Новое в блоге</h2>
@@ -336,7 +345,8 @@
             
         </div>
     </section>
-<footer>
+<footer id="contacts">
+  <div id="contacts-start"></div>
   <div>
     <a href="http://vk.com/checkintmn">
       <img src="/img/vk-logo.svg" alt="vk-logo" width="32px">
@@ -347,6 +357,7 @@
     <p>E-mail: info@checkintmn.ru</p>
     <p class="hugo">Site powered by <a href="http://gohugo.io">Hugo</a></p>
   </div>
+  <div id="contacts-end"></div>
 </footer>
 <div id="lightbox" class="hidden">
   <div class="back"></div>

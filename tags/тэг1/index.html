@@ -14,7 +14,7 @@
 </head>
 
 <body lang="ru">
-<div id="navbar"  class="shrink no-expand"  >
+<div id="navbar"  class="shrink no-expand blog"  >
     <div class="container">
         <button type="button" class="navbar-toggle" id="nav-toggle">
             <span class="icon-bar"></span>
@@ -23,18 +23,23 @@
         </button>
         <ul class="nav collapse" id="nav">
             <li>
-                <a href="/post/" class="nav-link">
-                    Блог
+                <a href="#main" class="nav-link index-link" data-active-until="main-end">
+                    О проекте
                 </a>
             </li>
             <li>
-                <a href="#pricing" class="nav-link index-link">
+                <a href="#pricing" class="nav-link index-link" data-active-until="pricing-end">
                     Цены
                 </a>
             </li>
             <li>
-                <a href="#contacts" class="nav-link index-link">
+                <a href="#contacts" class="nav-link index-link" data-active-until="contacts-end" data-active-after="contacts-start">
                     Контакты
+                </a>
+            </li>
+            <li>
+                <a href="/post/" class="nav-link  active ">
+                    Блог
                 </a>
             </li>
         </ul>
@@ -77,7 +82,8 @@
 
   
 
-<footer>
+<footer id="contacts">
+  <div id="contacts-start"></div>
   <div>
     <a href="http://vk.com/checkintmn">
       <img src="/img/vk-logo.svg" alt="vk-logo" width="32px">
@@ -88,6 +94,7 @@
     <p>E-mail: info@checkintmn.ru</p>
     <p class="hugo">Site powered by <a href="http://gohugo.io">Hugo</a></p>
   </div>
+  <div id="contacts-end"></div>
 </footer>
 <div id="lightbox" class="hidden">
   <div class="back"></div>

@@ -129,7 +129,7 @@ function initLightbox() {
     }
 
     setInterval(function () {
-        if(window.innerWidth / window.innerHeight > 1.75) {
+        if (window.innerWidth / window.innerHeight > 1.75) {
             lb.classList.add("v");
         } else {
             lb.classList.remove("v");
@@ -143,12 +143,60 @@ function initLightbox() {
         lbBack.style.visibility = currentGroup.length > 1 ? "visible" : "hidden";
         lbBack.style.visibility = currentGroup.length > 1 ? "visible" : "hidden";
         lbImg.setAttribute("src", currentUrl);
+        document.addEventListener("keydown", keyDownHandler);
+        disableScroll();
     }
 
-    function hideLightbox(groupName, url) {
+    function hideLightbox() {
         lb.classList.add("hidden");
         currentUrl = "";
         lbImg.setAttribute("src", currentUrl);
+        document.removeEventListener("keydown", keyDownHandler);
+        enableScroll();
+    }
+
+    // left: 37, up: 38, right: 39, down: 40,
+    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+    var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+    function preventDefault(e) {
+        e = e || window.event;
+        if (e.preventDefault)
+            e.preventDefault();
+        e.returnValue = false;
+    }
+
+    function keyDownHandler(e) {
+        if (e.keyCode === 27) {
+            hideLightbox();
+        }
+        if (e.keyCode === 37) {
+            prevImg(e);
+        }
+        if (e.keyCode === 39) {
+            nextImg(e);
+        }
+        if (keys[e.keyCode]) {
+            preventDefault(e);
+            return false;
+        }
+    }
+
+
+    function disableScroll() {
+        window.addEventListener('DOMMouseScroll', preventDefault);
+        window.addEventListener("wheel", preventDefault); // modern standard
+        window.addEventListener("mousewheel", preventDefault); // older browsers, IE
+        document.addEventListener("mousewheel", preventDefault); // older browsers, IE
+        window.addEventListener("touchmove", preventDefault); // mobile
+    }
+
+    function enableScroll() {
+        window.removeEventListener('DOMMouseScroll', preventDefault);
+        window.removeEventListener("wheel", preventDefault);
+        window.removeEventListener("mousewheel", preventDefault);
+        document.removeEventListener("mousewheel", preventDefault);
+        window.removeEventListener("touchmove", preventDefault);
     }
 
     function nextImg(e) {

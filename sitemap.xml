@@ -3,23 +3,13 @@
   
   <url>
     <loc>http://checkintmn.ru/</loc>
-    <lastmod>2016-06-14T23:56:35+05:00</lastmod>
+    <lastmod>2016-06-18T01:03:13+05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://checkintmn.ru/post/test/</loc>
-    <lastmod>2016-06-14T23:56:35+05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://checkintmn.ru/post/greeting/</loc>
-    <lastmod>2016-06-10T23:50:30+05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://checkintmn.ru/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://checkintmn.ru/post/first/</loc>
+    <lastmod>2016-06-18T01:03:13+05:00</lastmod>
   </url>
   
 </urlset>

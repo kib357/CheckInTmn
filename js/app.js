@@ -128,6 +128,14 @@ function initLightbox() {
         }
     }
 
+    setInterval(function () {
+        if(window.innerWidth / window.innerHeight > 1.75) {
+            lb.classList.add("v");
+        } else {
+            lb.classList.remove("v");
+        }
+    }, 300);
+
     function showLightbox(groupName, url) {
         lb.classList.remove("hidden");
         currentGroup = imgGroups[groupName];
@@ -214,6 +222,8 @@ function initPrice() {
     }
 
     function preOrder(option) {
+        alert("Опция заказа с сайта пока не доступна");
+        return;
         price.classList.add("hidden");
         orderFormContainer.classList.add("show");
         document.getElementById("order-product").innerHTML = products[option];
@@ -251,20 +261,23 @@ function initPrice() {
                 if (err) {
                     alert(orderErrorText);
                 } else {
+                    document.getElementById("pricing").scrollIntoView();
                     orderFormContainer.classList.remove("show");
                     orderSuccess.classList.add("show");
                     orderSuccess.children[0].innerHTML = acceptedText.replace("{{orderId}}", orderId);
-                    orderSuccess.children[1].innerHTML = "<p>" + product + "</p>";
+                    orderSuccess.children[1].innerHTML = "<p><b>" + product + "</b></p>";
                     if (formData.paymentType === "online") {
-                        var s = 5;
+                        var s = 10;
                         var interval = setInterval(function () {
                             if (s > 0) {
                                 s--;
                                 orderSuccess.children[2].innerHTML = waitPaymentFormText.replace("{{s}}", s);
+                                if (s < 2) {
+                                    makePaymentWithWidget(amount, orderId, "- " + product);
+                                }
                             } else {
                                 clearInterval(interval);
                                 orderSuccess.children[2].innerHTML = successText;
-                                makePaymentWithWidget(amount, orderId, "- " + product);
                             }
                         }, 1000);
                     } else {

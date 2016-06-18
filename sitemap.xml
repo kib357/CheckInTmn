@@ -3,13 +3,18 @@
   
   <url>
     <loc>http://checkintmn.ru/</loc>
-    <lastmod>2016-06-18T01:03:13+05:00</lastmod>
+    <lastmod>2016-06-18T15:13:50+05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://checkintmn.ru/post/first/</loc>
-    <lastmod>2016-06-18T01:03:13+05:00</lastmod>
+    <loc>http://checkintmn.ru/payment/</loc>
+    <lastmod>2016-06-18T15:13:50+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://checkintmn.ru/post/about-project/</loc>
+    <lastmod>2016-06-18T14:15:24+05:00</lastmod>
   </url>
   
 </urlset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Фотопрогулка on Check in TMN - фотопрогулки по Тюмени</title>
+    <link>http://checkintmn.ru/tags/%D1%84%D0%BE%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B0/</link>
+    <description>Recent content in Фотопрогулка on Check in TMN - фотопрогулки по Тюмени</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 18 Jun 2016 14:15:24 +0500</lastBuildDate>
+    <atom:link href="http://checkintmn.ru/tags/%D1%84%D0%BE%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Check in TMN – что это?</title>
+      <link>http://checkintmn.ru/post/about-project/</link>
+      <pubDate>Sat, 18 Jun 2016 14:15:24 +0500</pubDate>
+      
+      <guid>http://checkintmn.ru/post/about-project/</guid>
+      <description>&lt;p&gt;Минуя нас, судьба вершит дела. (Петроний)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://checkintmn.ru/post/rom.jpg&#34; alt=&#34;GitHub Logo&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

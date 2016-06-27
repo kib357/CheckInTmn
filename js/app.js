@@ -18,7 +18,6 @@ var tinkoffWidget = new TinkoffWidget();
 function makePaymentWithWidget(amount, orderId, description) {
     var params = {
         terminalKey: "checkintmnDEMO", //Код терминала (обязательный параметр), выдается банком.
-        terminalPassword: "3dcj7lqbm6bqq1qo",
         amount: amount, //Сумма заказа в копейках (обязательный параметр)
         orderId: orderId, //Номер заказа (если не передан, принудительно устанавливается timestamp)
         description: description, //Описание заказа (не обязательный параметр)
